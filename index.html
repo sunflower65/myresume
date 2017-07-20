@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>个人简历</title>
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="css/resume.css" rel="stylesheet">
+</head>
+<body>
+<section class="main">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!--第一屏-->
+            <div class="swiper-slide page1">
+                <img src="img/reseum.png">
+                <img src="img/paopao.png">
+                <img src="img/paopao.png">
+                <img src="img/paopao.png">
+                <img src="img/paopao.png" class="txt_bg">
+                <img src="img/car_top1.png" class="car_top">
+                <img src="img/car_bot.png" class="car_bot">
+                <ul>
+                    <li>
+                        姓名：<span>赵双燕</span>
+                    </li>
+                    <li class="animated slideInRight">
+                        应聘：<span>web前端</span>
+                    </li>
+                </ul>
+            </div>
+            <!--第二屏-->
+            <div class="swiper-slide page2">
+                <h2>基本信息</h2>
+                <div class="square"></div>
+                <img src="img/sun.png" class="sun-cool">
+                <img src="img/cloud.png" class="cloud">
+                <ul>
+                    <li><i></i>姓名：赵双燕</li>
+                    <li><i></i>性别：女</li>
+                    <li><i></i>出生日期：xxx年xx月xx日</li>
+                    <li><i></i>电话：18310742316</li>
+                    <li><i></i>邮箱：zsyzsybj@163.com</li>
+                    <li><i></i>毕业院校：河北科技师范学院</li>
+                    <li><i></i>专业：计算机网络技术</li>
+                    <li><i></i>政治面貌：党员</li>
+                </ul>
+                <div class="sunflower animated fadeIn">
+                    <img src="img/flower1.png" alt=""/><img src="img/flower2.png" alt=""/><img src="img/flower3.png" alt=""/>
+                </div>
+            </div>
+            <!--第三屏-->
+            <div class="swiper-slide page3">
+                <h2><img src="img/wheel.png"><img src="img/wheel.png"> <b><span>工作经历</span>work experience</b></h2>
+                <ul>
+                    <li>
+                        <img src="img/tit_bg.png"><img src="img/lbx.png">
+                        <p>2013.9~2015.3<span>杭州万卓电子商务有限公司</span></p>
+                        <div>
+                            <label>职位：web前端</label>
+                            主要负责页面切图与制作，完成页面特效以及数据交互，配合后台完成上线调整。</div>
+                    </li>
+                    <li>
+                        <img src="img/tit_bg.png"><img src="img/lbx.png">
+                        <p>2015.3~2016.5<span>浙江汇购科技股份有限公司</span></p>
+                        <div>
+                            <label>职位：网站前端工程师</label>
+                            主要负责页面切图与制作，完成页面特效以及数据交互，配合后台完成上线调整。</div>
+                    </li>
+                    <li>
+                        <img src="img/tit_bg.png"><img src="img/lbx.png">
+                        <p>2016.5~2016.11<span>航天开元科技有限公司</span></p>
+                        <div>
+                            <label>职位：前端开发工程师</label>
+                            主要负责页面切图与制作，完成页面特效以及数据交互，配合后台完成上线调整。</div>
+                    </li>
+                </ul>
+            </div>
+            <!----第四屏---->
+            <div class="swiper-slide page4">
+                <p class="traverse"><span></span></p>
+                <p class="portrait"><span></span></p>
+                <h2><p><span>自我评价</span>self appraisal</p></h2>
+                <ul class="appra">
+                    <li>1，工作认真负责，能吃苦耐劳，有耐心。</li>
+                    <li>2，具有充分的团队合作意识，善于沟通。</li>
+                    <li>3，有很好的分析问题与解决问题的能力。</li>
+                    <li>4，喜欢读书，旅游，爬山。</li>
+                    <li>5，自学能力强，勇于迎接新挑战。</li>
+                </ul>
+                <div class="page4-motto"><img src="img/zym2.png" class="page4-zym">
+                    <p class="page4-motto-left"><img src="img/tdcq.png"> </p>
+                    <p class="page4-motto-right"><img src="img/czyh.png"><img src="img/butterfly.png" class="right-butter"> </p>
+                </div>
+                <div class="page4-balloon"></div>
+            </div>
+            <!------第五屏-------->
+            <div class="swiper-slide page5">
+                <div>
+                    <img src="img/weixin.png">
+                </div>
+                <p>请联系我</p>
+                <ul>
+                    <li>Name：赵双燕</li>
+                    <li>Tel：18310742316</li>
+                    <li>Email：zsyzsybj@163.com</li>
+                </ul>
+                <img src="img/city.png" class="city">
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/fastclick.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<script>
+    FastClick.attach(document.body);
+    function setRem(){
+        var fontSize = 100/750 * document.documentElement.clientWidth;
+                document.documentElement.style.fontSize = (fontSize<100 ? fontSize : 100) + 'px';
+    }
+    setRem();
+    window.addEventListener('resize',setRem,false);
+    //第二屏页面的li动画
+
+//        $('#page02 li').each(function (index,item){
+//            index += 2;
+//            $(item).css('animation-delay',"."+index + 's');
+//        });
+
+
+    //第三屏li动画
+//    $('#page03 li').each(function (index,item){
+//        index += 1;
+//        $(item).addClass('animated fadeInLeft').css('animation-delay',index+'s');
+//        $(item).find('img').addClass('animated bounceInLeft').css('animation-delay',index+0.2+ 's');
+//        $(item).find('p').addClass('animated fadeInRightBig').css('animation-delay',index+0.3+ 's');
+//        $(item).find('div').addClass('animated bounceInUp').css('animation-delay',index+0.5+ 's');
+//    });
+    //第四屏li动画：
+//    $('#page04 .appra li').each(function(index,item){
+//        $(item).addClass('animated fadeInRightBig').css('animation-delay',index*0.2+ 's');
+//    });
+//    $('#page04 .page4-motto p').addClass('animated zoomIn').css('animation-delay','1.3s');
+
+    //第五屏
+//    $('#page05 .page5 ul').css('animation-delay','1s');
+
+    var swiper=new Swiper(".swiper-container",{
+        loop:true,
+        lazyLoading : true,
+        lazyLoadingInPrevNext : true,
+        direction:"vertical",
+        onTransitionEnd:function (swiper){
+            //swiper.slides:获取的是一个对象数组，里面有length属性，属性值代表当前滑块的数量；
+            var slides = swiper.slides;
+            var curIndex = swiper.activeIndex;
+//            console.log(curIndex);
+            var targetId = "page0";
+            switch (curIndex){     //为了防止后面的样式把前面的覆盖掉
+                case 6:
+                    targetId += 1;
+                    break;
+                case 0:
+                    targetId += 5;
+                    break;
+                default:
+                    targetId += curIndex;
+            }
+//            console.log(targetId);
+//            console.log(slides[0]);
+            //通过判断当前滑块的索引，给显示的滑块加上id
+            [].forEach.call(slides,function(item,index){
+                if(curIndex == index){
+                    item.id = targetId;
+                }else{
+                    item.id = null;
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>

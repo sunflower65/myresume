@@ -1,0 +1,697 @@
+html,body,p,ul,li,h1,h2,h3,h4,h5,h6,section,aside,input{
+    padding:0;
+    margin:0;
+    font-family:Helvetica Neue,Helvetica,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,arial,sans-serif;
+}
+html,body{
+    margin:0 auto;
+}
+html,body,.main,.swiper-container,.swiper-slide{
+    height:100%;
+    width:100%;
+    max-width:750px;
+}
+img{
+    display:block;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+ul{
+    list-style:none;
+}
+.page1,.page2{
+    overflow:hidden;
+}
+
+/*第一屏*/
+.page1{
+    background:url("../img/resume_bg1.jpg") no-repeat center;
+    background-size:cover;
+    position:relative;
+    font-size:.2rem;
+    -webkit-touch-callout: none;
+}
+.page1 img,.page2 img{
+    position:absolute;
+    display:none;
+}
+#page01 img,#page02 img{
+    display:block;
+}
+#page01 img:nth-child(1){
+    width:1.63rem;
+    height:2.77rem;
+    top:3.5rem;
+    left:2.4rem;
+    -webkit-animation: bounceInDown 1s ease-in-out;
+    -o-animation: bounceInDown 1s ease-in-out;
+    animation: bounceInDown 1s ease-in-out;
+}
+
+#page01 img:nth-child(2){
+    width:0.5rem;
+    height:0.5rem;
+    -webkit-animation: myfly1 7s linear infinite;
+    -o-animation: myfly1 7s linear infinite;
+    animation: myfly1 7s linear infinite;
+}
+@keyframes myfly1 {
+    0%{
+        left:100%;
+        top:-0.5rem;
+        transform:scale(1);
+    }
+    100%{
+        left:0;
+        top:4rem;
+        transform:scale(3);
+    }
+}
+#page01 img:nth-child(3){
+    width:0.5rem;
+    height:0.5rem;
+    left:70%;
+    top:-0.5rem;
+    -webkit-animation: myfly2 7s linear 3s infinite;
+    -o-animation: myfly2 7s linear 3s infinite;
+    animation: myfly2 7s linear 3s infinite;
+}
+@keyframes myfly2 {
+    0%{
+        left:70%;
+        top:-0.5rem;
+        transform:scale(1);
+    }
+    50%{
+        left:30%;
+        top:5rem;
+        opacity:.6;
+        transform:scale(2);
+    }
+    100%{
+        left:50%;
+        top:80%;
+        opacity:0;
+        transform:scale(3);
+    }
+}
+#page01 img:nth-child(4){
+    width:0.8rem;
+    height:0.8rem;
+    left:30%;
+    top:-0.8rem;
+    -webkit-animation: myfly3 7s linear 7s infinite;
+    -o-animation: myfly3 7s linear 7s infinite;
+    animation: myfly3 7s linear 7s infinite;
+}
+@keyframes myfly3 {
+    0%{
+        left:30%;
+        top:-0.5rem;
+        transform:scale(1);
+    }
+    100%{
+        left:90%;
+        top:80%;
+        opacity:0;
+        transform:scale(2.5);
+    }
+}
+.txt_bg{
+    width:70%;
+    top:12%;
+    left:.6rem;
+}
+#page01 .car_top{
+    width:1.76rem;
+    height:1.57rem;
+    bottom:1.17rem;
+    right:.22rem;
+    z-index:2;
+    -webkit-animation: myCar 1s linear infinite;
+    -o-animation: myCar 1s linear infinite;
+    animation: myCar 1s linear infinite;
+}
+@keyframes myCar {
+    from{
+        transform:rotate(0deg);
+        transform-origin: 43% 42%;
+    }
+    to{
+        transform:rotate(360deg);
+        transform-origin: 43% 42%;
+    }
+}
+.page1 .car_bot{
+    width:.23rem;
+    height:2.26rem;
+    bottom:-.1rem;
+    right:1.1rem;
+}
+.page1 ul{
+    padding:7.5rem 0 0 .8rem;
+}
+.page1 ul li{
+    font:.46rem/1.5 微软雅黑;
+    color:#fff;
+    margin-bottom:.15rem;
+    display:none;
+}
+#page01 li:nth-child(1){
+    display:block;
+    animation:slideInRight 0.6s linear;
+}
+#page01 li:nth-child(2){
+    display:block;
+    animation:slideInRight 0.8s linear;
+}
+.page1 li span{
+    padding:0 .2rem .05rem;
+    font-size:.6rem;
+    border-bottom:1px solid #ccc;
+    color:#fff;
+    letter-spacing:.04rem;
+}
+/*第二屏*/
+.page2,.page3,.page4,.page5{
+    background:url("../img/jlbg.jpg") no-repeat center;
+    background-size:cover;
+    position:relative;
+}
+.page2 h2{
+    display:none;
+    width:3.5rem;
+    height:.7rem;
+    letter-spacing:.1rem;
+    text-align:center;
+    font-size:.4rem;
+    line-height:.7rem;
+    position:absolute;
+    top:1.35rem;
+    left:.8rem;
+    z-index:2;
+    background:linear-gradient(to right,#91ebeb,#ff75b3);
+    border-radius:.1rem;
+    color:#fff;
+}
+#page02 h2{
+    display:block;
+    animation:bounceInDown 1s linear;
+}
+.page2 .square{display:none;}
+#page02 .square{
+    display:block;
+    animation:bounceInUp .5s linear;
+    width:85%;
+    height:75%;
+    z-index:1;
+    margin:1.8rem auto 0;
+    border:.3rem solid #fff;
+    -webkit-border-image:url("../img/borderImg.png") 30 30 round; /* Safari 5 */
+    -o-border-image:url("../img/borderImg.png") 30 30 round; /* Opera */
+    border-image:url("../img/borderImg.png") 30 30 round;
+}
+#page02 img.sun-cool{
+    width:1rem;
+    height:1rem;
+    right:.3rem;
+    top:.2rem;
+    -webkit-animation:fadeIn 1s linear, sunrun 1s linear infinite;
+    -o-animation:fadeIn 1s linear, sunrun 1s linear infinite;
+    animation:fadeIn 1s linear, sunrun 1s linear infinite;
+}
+@keyframes sunrun {
+    0%{
+        transform:rotateZ(20deg) scale(1);
+    }
+    25%{
+        transform:rotateZ(30deg) scale(1.2);
+    }
+    50%{
+        transform:rotateZ(40deg) scale(1.3);
+    }
+    75%{
+        transform:rotateZ(30deg) scale(1.2);
+    }
+    100%{
+        transform:rotateZ(20deg) scale(1);
+    }
+}
+#page02 .cloud{
+    width:1rem;
+    height:.89rem;
+    top:.23rem;
+    right:2rem;
+    -webkit-animation: myCloud 8s linear infinite;
+    -o-animation: myCloud 8s linear infinite;
+    animation: myCloud 8s linear infinite;
+}
+@keyframes myCloud {
+    0%{
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        -o-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+    30%{
+        top:6%;
+        right:50%;
+    }
+    100%{
+        top:4%;
+        right:100%;
+    }
+}
+.page2 ul{
+    position:absolute;
+    top:2rem;
+    font-size:.42rem;
+}
+.page2 li{
+    margin-bottom:0.3rem;
+    color:#f89b09;
+    padding-left:.6rem;
+    display:none;
+}
+#page02 li{
+    display:block;
+    animation:slideInLeft 0.6s linear;
+}
+#page02 li:nth-child(1){
+    animation-duration: 0.8s;
+}
+#page02 li:nth-child(2){
+    animation-duration: 1s;
+}
+#page02 li:nth-child(3){
+    animation-duration: 1.2s;
+}
+#page02 li:nth-child(4){
+    animation-duration: 1.4s;
+}
+#page02 li:nth-child(5){
+    animation-duration: 1.6s;
+}
+#page02 li:nth-child(6){
+    animation-duration: 1.8s;
+}
+#page02 li:nth-child(7){
+    animation-duration: 2s;
+}
+#page02 li:nth-child(8){
+    animation-duration: 2.2s;
+}
+.page2 li i{
+    display:inline-block;
+    width:.6rem;
+    height:.6rem;
+    background:url("../img/tit_i.png") no-repeat center;
+    background-size:100% 100%;
+    margin-right:.2rem;
+    position: relative;
+    top:.1rem;
+    animation:sunRotate 1s linear infinite;
+}
+@keyframes sunRotate {
+    form{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.page2 .sunflower{
+    animation-duration:2s;
+}
+.page2 .sunflower img{
+    bottom:0;
+    left:.3rem;
+}
+.page2 .sunflower img:nth-child(1){
+    width:1.36rem;
+    height:2.32rem;
+    transform:rotate(-8deg);
+    -webkit-animation: flowerMove1 1s linear infinite;
+    -o-animation: flowerMove1 1s linear infinite;
+    animation: flowerMove1 1s linear infinite;
+}
+.page2 .sunflower img:nth-child(2){
+    width:1.48rem;
+    height:3.38rem;
+    left:1rem;
+    bottom:-.4rem;
+    transform:rotate(10deg);
+    -webkit-animation: flowerMove2 1s linear infinite;
+    -o-animation: flowerMove2 1s linear infinite;
+    animation: flowerMove2 1s linear infinite;
+}
+.page2 .sunflower img:nth-child(3){
+    width:1.18rem;
+    height:2.32rem;
+    left:1.8rem;
+    bottom:-.4rem;
+    transform:rotate(15deg);
+    -webkit-animation: flowerMove2 1s linear infinite;
+    -o-animation: flowerMove2 1s linear infinite;
+    animation: flowerMove2 1s linear infinite;
+}
+@keyframes flowerMove1 {
+    0%{
+        transform:rotate(-8deg);
+    }
+    50%{
+        transform:rotate(-5deg);
+    }
+    100%{
+        transform:rotate(-8deg);
+    }
+}
+@keyframes flowerMove2 {
+    0%{
+        transform:rotate(10deg);
+    }
+    50%{
+        transform:rotate(14deg);
+    }
+    100%{
+        transform:rotate(10deg);
+    }
+}
+@keyframes flowerMove3 {
+    0%{
+        transform:rotate(15deg);
+    }
+    50%{
+        transform:rotate(17deg);
+    }
+    100%{
+        transform:rotate(15deg);
+    }
+}
+/*第三屏*/
+.page3 img{
+    position:relative;
+    display:none;
+}
+.page3 h2{
+    display:none;
+    padding:.3rem 0 .5rem;
+    margin-left:.2rem;
+    font-size:.3rem;
+    color:#1329ad;
+    text-shadow: 5px 5px 5px #d7f66d;
+}
+#page03 h2{
+    display:block;
+    animation:bounceInDown 1s linear;
+}
+.page3 h2 b{
+    display:block;
+}
+#page03 h2 b{
+    display:inline-block;
+    animation:flipInY 1s linear;
+}
+.page3 h2 span{
+    font-size:.4rem;
+    margin:0 .2rem;
+}
+.page3 h2 img{
+    display:inline-block;
+    width:.8rem;
+    height:.8rem;
+    -webkit-animation: wheelRotate 2s linear infinite;
+    -o-animation: wheelRotate 2s linear infinite;
+    animation: wheelRotate 2s linear infinite;
+}
+.page3 h2 img:nth-child(2){
+    top:.35rem;
+    left:-.05rem;
+}
+@keyframes wheelRotate {
+    form{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.page3 li{
+    display:none;
+    position:relative;
+    padding:.3rem 0 .6rem;
+    font-size:.3rem;
+    color:#333;
+}
+#page03 li{
+    display:block;
+    animation:fadeInLeft 1s linear;
+}
+#page03 li img{
+    display:inline-block;
+    -webkit-animation: bounceInLeft 1s linear .3s;
+    -o-animation: bounceInLeft 1s linear .3s;
+    animation: bounceInLeft 1s linear .3s;
+}
+.page3 li img:nth-child(1){
+    width:1.57rem;
+}
+.page3 li img:nth-child(2){
+    width:0.6rem;
+    position:relative;
+    top:.03rem;
+}
+.page3 li p{
+    display:none;
+    position:absolute;
+    top:-.15rem;
+    left:2.4rem;
+    font-size:.36rem;
+    font-weight:bold;
+    padding-bottom:.1rem;
+    border-bottom:.05rem solid #d055a0;
+}
+#page03 li p{
+    display: block;
+    animation:fadeInRightBig 1s linear;
+}
+.page3 li p span{
+    display:block;
+}
+.page3 div{
+    display:none;
+    margin:.5rem .2rem 0 2.4rem;
+}
+#page03 div{
+    display:block;
+    -webkit-animation: bounceInUp 1.3s linear;
+    -o-animation: bounceInUp 1.3s linear;
+    animation: bounceInUp 1.3s linear;
+}
+.page3 div label{
+    display:block;
+    font-weight: 700;
+    margin-bottom:.05rem;
+}
+/*第四屏*/
+.page4{overflow:hidden;}
+.page4 .traverse{
+    position:absolute;
+    width:95%;
+    height:.1rem;
+    right:0;
+    top:1.1rem;
+    display:none;
+}
+#page04 .traverse{
+    display:block;
+    animation:fadeInRight 1s linear;
+}
+.page4 .traverse span{
+    display:block;
+    width:100%;
+    height:100%;
+    background:#11a3f7;
+    transform:rotate(-10deg) !important;
+}
+.page4 .portrait{
+    position:absolute;
+    width:.1rem;
+    height:95%;
+    left:2rem;
+    bottom:0;
+    display:none;
+}
+#page04 .portrait{
+    display:block;
+    animation:fadeInUp 1s linear;
+}
+.page4 .portrait span{
+    display:block;
+    width:100%;
+    height:100%;
+    background:#11a3f7;
+    transform:rotate(-10deg);
+}
+.page4 h2{
+    position:absolute;
+    font-size:.3rem;
+    color:#73cc8c;
+    padding:.55rem 0 0 1.3rem;
+    z-index:1;
+    display:none;
+}
+#page04 h2{
+    display:block;
+    animation:rotateInDownLeft 1s linear ;
+}
+.page4 h2 p{
+    transform:rotate(-10deg);
+}
+.page4 h2 span{
+    font-size:.44rem;
+    margin-right:.2rem;
+}
+.appra{
+    position:absolute;
+    padding:.5rem 0 0 1.7rem;
+    transform:rotate(-10deg);
+    font-size:.3rem;
+    z-index:2;
+    top:1.3rem;
+}
+.appra li{
+    display:none;
+    margin-bottom:.3rem;
+}
+#page04 .appra li{
+    display:block;
+    -webkit-animation: fadeInRightBig 1s linear;
+    -o-animation: fadeInRightBig 1s linear;
+    animation: fadeInRightBig 1s linear;
+}
+.page4-motto{
+    position:absolute;
+    left:1rem;
+    top:5.5rem;
+    z-index:2;
+    display:none;
+}
+#page04 .page4-motto{
+    display:block;
+    animation:fadeInLeftBig 1s linear;
+}
+.page4-zym{
+    transform:rotate(-10deg);
+    width:.6rem;
+}
+.page4-motto p{
+    position:absolute;
+    display:none;
+}
+#page04 .page4-motto p{
+    display:block;
+    animation:zoomIn 1.8s linear;
+}
+.page4-motto-left{
+    left:2.7rem;
+    top:1.3rem;
+}
+.page4-motto-left img,.page4-motto-right img{
+    width:.5rem;
+}
+.page4-motto-right{
+    left:3.5rem;
+    top:2.6rem;
+}
+.page4-motto-right .right-butter{
+    position:absolute;
+    top:1.9rem;
+    left:.5rem;
+    width:.6rem;
+}
+.page4-balloon{
+    width:1.67rem;
+    height:2.24rem;
+    background:url("../img/balloon.png") no-repeat;
+    background-position:0 0;
+    background-size:cover;
+    position:absolute;
+    animation:balloonTran 12s linear infinite;
+}
+@keyframes balloonTran {
+    0%{
+        left:.9rem;
+        top:100%;
+        opacity:.5;
+        z-index:0;
+    }
+    25%{
+        left:3rem;
+        top:80%;
+    }
+    50%{
+        left:5rem;
+        top:50%;
+    }
+    75%{
+        left:1rem;
+        top:20%;
+    }
+    100%{
+        left:4rem;
+        top:-2.24rem;
+    }
+}
+/*第五屏*/
+.page5 img{
+    display:none;
+    position:absolute;
+}
+#page05 img:nth-child(1){
+    display:block;
+    animation:bounceIn 1s linear;
+}
+.page5 div img{
+    width:3.5rem;
+    top:7%;
+    left:2.3rem;
+    animation-duration:2s;
+}
+.page5 p{
+    display:none;
+    font-size:.5rem;
+    color:#5490f2;
+    padding-top:75%;
+    text-align:center;
+    margin-bottom:.5rem;
+    font-weight:600;
+    letter-spacing: .1rem;
+}
+#page05 p{
+    display:block;
+    animation:wobble 1s linear;
+}
+.page5 ul{
+    display:none;
+    font-size:.4rem;
+    width:5.2rem;
+    margin:0 auto;
+}
+#page05 ul{
+    display:block;
+    animation:fadeInDown 1.5s linear;
+}
+.page5 ul li{
+    margin-bottom:.2rem;
+}
+.page5 .city{
+    width:100%;
+    left:0;
+    bottom:0;
+}
+#page05 .city{
+    display:block;
+    animation: fadeInUp 1s linear;
+}
